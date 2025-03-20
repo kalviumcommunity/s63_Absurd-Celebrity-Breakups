@@ -44,5 +44,5 @@ This project is interesting because it blends humor with technical complexity. I
 - **User Experience Design**: Ensuring the platform is intuitive and engaging.
 
 
-By working on this project, I’ll develop key skills like user authentication, API creation, and database management while learning how to create fun, creative applications.
+By working on this project, I’ll develop key skills like user authentication, API creation, and database management while learning how to create fun, creative application.
 
