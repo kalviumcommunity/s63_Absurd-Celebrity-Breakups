@@ -1,41 +1,26 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const divorceRoutes = require('../backend/routes/DivorceRoutes'); // Import the routes
-
-dotenv.config(); // Load environment variables
-
+const express = require("express");
 const app = express();
 
-// Middleware
-app.use(express.json());
-app.use(cors());
+const PORT = process.env.PORT || 3000;
 
-// Connect to MongoDB
-mongoose.connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log('✅ MongoDB Connected'))
-.catch(err => console.error('❌ MongoDB Connection Error:', err));
-
-// Routes
-app.use('/api/divorces', divorceRoutes); // Use divorce routes
-
-// Root endpoint
-app.get('/', (req, res) => {
-    res.send('Welcome to the Celebrity Divorce API');
+// Error-handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack); // Log the error for debugging
+    res.status(500).json({ error: "Internal Server Error" });
 });
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({ message: 'Something went wrong!' });
+// Basic /ping route with error handling
+app.get("/ping", (req, res, next) => {
+    try {
+        // Simulating a successful response
+        res.status(200).send("Pong!");
+    } catch (error) {
+        // Pass the error to the error-handling middleware
+        next(error);
+    }
 });
 
 // Start the server
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port: http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
