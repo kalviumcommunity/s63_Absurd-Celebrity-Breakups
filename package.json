@@ -1,0 +1,20 @@
+{
+  "name": "s63_absurd-celebrity-breakups",
+  "version": "1.0.0",
+  "description": "**# Celebrity Divorce List: The Silliest Reasons They Split**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalviumcommunity/s63_Absurd-Celebrity-Breakups.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalviumcommunity/s63_Absurd-Celebrity-Breakups/issues"
+  },
+  "homepage": "https://github.com/kalviumcommunity/s63_Absurd-Celebrity-Breakups#readme"
+}
