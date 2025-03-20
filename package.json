@@ -4,5 +4,24 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.12.1"
-  }
+  },
+  "name": "s63_absurd-celebrity-breakups",
+  "version": "1.0.0",
+  "description": "**# Celebrity Divorce List: The Silliest Reasons They Split**",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalviumcommunity/s63_Absurd-Celebrity-Breakups.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalviumcommunity/s63_Absurd-Celebrity-Breakups/issues"
+  },
+  "homepage": "https://github.com/kalviumcommunity/s63_Absurd-Celebrity-Breakups#readme"
 }
