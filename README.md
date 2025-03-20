@@ -1,5 +1,7 @@
 **# Celebrity Divorce List: The Silliest Reasons They Split**
 
+RENDER DEPLOYMENT LINK = `https://s63-absurd-celebrity-breakups-final.onrender.com`
+
 ## Project Overview
 This project aims to create a dynamic and personalized list of celebrities who got divorced for ridiculously silly reasons. Users can log in, enter their preferences (e.g., "funniest" or "weirdest reasons"), and view a customized list that changes for each user. The goal is to combine humor with technical skills to demonstrate proof of work across full-stack development concepts
 
